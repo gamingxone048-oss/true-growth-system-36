@@ -2,7 +2,7 @@ import { Play, ArrowRight } from "lucide-react";
 import processDiagram from "@/assets/process-diagram.jpg";
 const HowItWorksSection = () => {
   const backgroundStyle = {
-    background: 'linear-gradient(145deg, #02050A 0%, #0C121B 50%, #171F2B 100%)'
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
   };
   const steps = [{
     step: "01",
@@ -57,16 +57,12 @@ const HowItWorksSection = () => {
           
           {/* Right: Demo Video */}
           <div className="relative">
-            <div className="aspect-video rounded-2xl border border-white/10 overflow-hidden group cursor-pointer hover:border-white/20 transition-all relative">
-              <img src={processDiagram} alt="Business Process Diagram" className="w-full h-full object-cover" />
+            <div className="aspect-[4/3] max-w-lg mx-auto rounded-2xl border border-white/10 overflow-hidden group cursor-pointer hover:border-white/20 transition-all relative">
+              <img src={processDiagram} alt="Business Process Diagram" className="w-full h-full object-contain bg-white/5" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all flex items-center justify-center">
                 
               </div>
             </div>
-            
-            {/* Floating Elements */}
-            
-            
           </div>
         </div>
       </div>

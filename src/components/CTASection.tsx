@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import ctaBackground from "@/assets/cta-background.jpg";
 const CTASection = () => {
   const backgroundStyle = {
-    background: 'linear-gradient(145deg, #02050A 0%, #0C121B 50%, #171F2B 100%)'
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
   };
-  return <section className="w-full py-16 md:py-24 bg-gray-950 relative overflow-hidden">
+  return <section style={backgroundStyle} className="w-full py-16 md:py-24 bg-gray-950 relative overflow-hidden">
       {/* Background Image */}
       <img src={ctaBackground} alt="CTA Background" className="absolute inset-0 w-full h-full object-cover opacity-60" />
       <div className="absolute inset-0 bg-black/40"></div>

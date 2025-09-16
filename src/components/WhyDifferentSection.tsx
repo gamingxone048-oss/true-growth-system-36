@@ -1,7 +1,7 @@
 import { CheckCircle, X } from "lucide-react";
 const WhyDifferentSection = () => {
   const backgroundStyle = {
-    background: 'linear-gradient(145deg, #02050A 0%, #0C121B 50%, #171F2B 100%)'
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
   };
   const comparisons = [{
     feature: "True Customization",

@@ -76,9 +76,13 @@ const WhatIsSystemSection = () => {
     // Resume auto-play after 10 seconds of inactivity
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
-  return <section className="w-full py-16 md:py-24 bg-primary-gradient bg-gray-950">
+  const backgroundStyle = {
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
+  };
+
+  return <section style={backgroundStyle} className="w-full py-16 md:py-24 bg-gray-950">
                 <div className="max-w-[1600px] mx-auto px-4 md:px-6">
-                    <div className="backdrop-blur-sm rounded-3xl p-6 md:p-10 border border-white/10 bg-gray-950">
+                    <div className="backdrop-blur-sm rounded-3xl p-6 md:p-10 border border-white/10" style={backgroundStyle}>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             
                             {/* Left Column: Text Content & Tabs */}

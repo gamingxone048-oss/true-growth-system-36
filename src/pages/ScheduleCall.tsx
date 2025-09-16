@@ -1,4 +1,4 @@
-import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const ScheduleCall = () => {
   const backgroundStyle = {
-    background: 'linear-gradient(145deg, #02050A 0%, #0C121B 50%, #171F2B 100%)'
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
   };
 
   return (
@@ -133,6 +133,52 @@ const ScheduleCall = () => {
               </div>
             </div>
 
+            {/* Company Information */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-8">
+              <h3 className="text-white font-space-grotesk text-xl mb-6">Get In Touch</h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                    <Phone className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-white font-poppins text-sm">+1 (555) 123-4567</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4">
+                  <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                    <Mail className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-white font-poppins text-sm">contact@adoflabs.com</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center mt-1">
+                    <MapPin className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-white font-poppins text-sm">123 Tech Street<br />Innovation City, IC 12345</div>
+                  </div>
+                </div>
+                
+                <div className="pt-4">
+                  <a 
+                    href="https://wa.me/15551234567" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg transition-colors w-full justify-center"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Connect on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+            
             {/* Trust Indicators */}
             <div className="bg-white/5 border border-white/10 rounded-xl p-8">
               <h3 className="text-white font-space-grotesk text-xl mb-6">Trusted By Leaders</h3>

@@ -1,8 +1,8 @@
-import { Layers, Bot, Shield, Zap, Database, Globe } from "lucide-react";
+import { Layers, Bot, Shield, Zap, Database, Headphones } from "lucide-react";
 import ScrollAnimation from "./ScrollAnimation";
 const FeaturesSection = () => {
   const backgroundStyle = {
-    background: 'linear-gradient(145deg, #02050A 0%, #0C121B 50%, #171F2B 100%)'
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
   };
   const features = [{
     icon: Layers,
@@ -30,9 +30,9 @@ const FeaturesSection = () => {
     description: "Deep insights into your business performance with predictive analytics and reporting",
     className: "md:col-span-1"
   }, {
-    icon: Globe,
-    title: "Global Reach",
-    description: "Worldwide infrastructure ensuring reliable access and performance across all regions",
+    icon: Headphones,
+    title: "24/7 Support",
+    description: "Round-the-clock expert assistance to keep your business running smoothly without interruption",
     className: "md:col-span-1"
   }];
   return <section style={backgroundStyle} className="w-full py-16 md:py-24 bg-gray-950">
@@ -53,7 +53,7 @@ const FeaturesSection = () => {
         {/* Features Grid */}
         <ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
-            {features.map((feature, index) => <div key={index} className={`${feature.className} bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 group h-full flex flex-col`}>
+            {features.map((feature, index) => <div key={index} className={`${feature.className} bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/[0.08] hover:scale-[1.02] transition-all duration-300 group h-full flex flex-col`}>
                 {/* Icon */}
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/20 transition-all">
                   <feature.icon className="w-6 h-6 text-white" />

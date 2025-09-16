@@ -17,21 +17,31 @@ const Index = () => {
       {/* System section slides over hero */}
       <div className="slide-over-section">
         <ScrollAnimation>
-          <WhatIsSystemSection />
+          <section id="system">
+            <WhatIsSystemSection />
+          </section>
         </ScrollAnimation>
       </div>
       
       {/* Normal scrolling sections */}
       <div className="normal-scroll">
-        <FeaturesSection />
+        <section id="features">
+          <FeaturesSection />
+        </section>
         <ScrollAnimation delay={0.2}>
-          <WhyDifferentSection />
+          <section id="why-different">
+            <WhyDifferentSection />
+          </section>
         </ScrollAnimation>
         <ScrollAnimation delay={0.4}>
-          <OurWorksSection />
+          <section id="our-works">
+            <OurWorksSection />
+          </section>
         </ScrollAnimation>
         <ScrollAnimation delay={0.6}>
-          <HowItWorksSection />
+          <section id="how-it-works">
+            <HowItWorksSection />
+          </section>
         </ScrollAnimation>
         <ScrollAnimation delay={0.8}>
           <CTASection />

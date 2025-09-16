@@ -2,7 +2,11 @@ import heroBackground from "@/assets/hero-background-hq.png";
 import { NavbarMenu } from "@/components/NavbarMenu";
 
 const HeroSection = () => {
-  return <div className="relative w-full h-screen min-h-[600px] max-h-[900px] flex flex-col sticky top-0 bg-gradient-to-br from-navy-900 via-charcoal-800 to-navy-900">
+  const backgroundStyle = {
+    background: 'linear-gradient(145deg, #040609 0%, #05070c 25%, #06070e 50%, #070c14 100%)'
+  };
+
+  return <div className="relative w-full h-screen min-h-[600px] max-h-[900px] flex flex-col sticky top-0 -mt-[72px]" style={backgroundStyle}>
       {/* Background Image */}
       <img src={heroBackground} alt="Digital ownership hero background" className="absolute inset-0 w-full h-full object-cover object-center opacity-70" style={{
       imageRendering: 'crisp-edges',
@@ -11,9 +15,7 @@ const HeroSection = () => {
     }} loading="eager" />
       
       {/* Navigation */}
-      <div className="relative z-10 w-full">
-        <NavbarMenu />
-      </div>
+      <NavbarMenu />
       
       {/* Hero Content - Bottom Left */}
       <div className="relative z-10 flex-1 flex items-end px-4 md:px-6 pb-12 md:pb-16">

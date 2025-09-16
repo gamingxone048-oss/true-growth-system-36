@@ -76,10 +76,22 @@ export const Menu = ({
   );
 };
 
-export const HoveredLink = ({ children, to, ...rest }: { children: React.ReactNode; to: string; [key: string]: any }) => {
+export const HoveredLink = ({ children, to, onClick, ...rest }: { children: React.ReactNode; to?: string; onClick?: () => void; [key: string]: any }) => {
+  if (onClick) {
+    return (
+      <button
+        onClick={onClick}
+        {...rest}
+        className="text-white/70 hover:text-white transition-colors duration-200 text-sm cursor-pointer border-none bg-transparent p-0 text-left"
+      >
+        {children}
+      </button>
+    );
+  }
+  
   return (
     <Link
-      to={to}
+      to={to || "#"}
       {...rest}
       className="text-white/70 hover:text-white transition-colors duration-200 text-sm"
     >
